@@ -2,7 +2,6 @@ apply plugin: 'java'
 apply plugin: 'maven-publish'
 
 group = 'LnpUpmQ'
-artifact = 'react-android'
 version = '0.72.17'
 
 
@@ -21,7 +20,7 @@ publishing {
         maven(MavenPublication) {
             artifact('libs/react-android-0.72.17-release.aar') {
                 groupId project.group
-                artifactId project.artifact
+                artifactId project.name
                 version project.version
             }
         }
